@@ -12,8 +12,8 @@ data['year'] = data.Date.dt.year
 data = data[data['year'] <= 1984] 
 
 data_r = pd.DataFrame((data.Close - data.Close.shift(1))/data.Close.shift(1))  
-data_r['da'] = data.Date
-data_r['dat'] = pd.to_datetime(data_r.da,format='%Y-%m-%d')
+#data_r['da'] = data.Date
+#data_r['dat'] = pd.to_datetime(data_r.da,format='%Y-%m-%d')
 data_r['year'] = data_r.dat.dt.year
 data_r['mm'] = data_r.dat.dt.month
 
