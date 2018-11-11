@@ -35,4 +35,4 @@ data_s = pd.DataFrame(data_r.groupby(['year','mm'])['Close'].agg(var)).reset_ind
 
 plt.plot(data_s.index ,data_s.Close)
 
-
+# create a new branch
